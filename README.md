@@ -28,7 +28,7 @@ This project is an e-commerce web application where users can browse different p
 
 ## Demo
 
-https://nua-assignment-two.vercel.app/
+https://nua-assignment-anuprita.vercel.app/
 
 
 ## Installation
@@ -65,7 +65,7 @@ Open your browser and visit http://localhost:5173
 - **State Management**: I used Redux Toolkit to manage global state for the cart and products. It helps maintain consistent data between different pages (like Product and Cart) and also simplifies debugging.
 - **Local Storage Sync**: The cart data is saved to localStorage after every update to make sure the cart persists even after page reloads.
 - **Debouncing & Caching**: I implemented debouncing in the search input to avoid multiple API calls while typing. Cached results are reused to improve load times and reduce network requests.
-- **Responsiveness**: Used Tailwind CSS utility classes for quick responsive design without writing extra CSS files.
+- **Responsiveness**: Used Tailwind CSS utility classes for quick responsive design.
 
 
 ## Trade-offs
