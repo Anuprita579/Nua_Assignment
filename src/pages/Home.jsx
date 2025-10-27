@@ -103,9 +103,9 @@ const Home = () => {
             <option key={cat}>{cat}</option>
           ))}
         </select>
-
-        {loading && <Loader />}
       </div>
+
+	  {loading && <Loader />}
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {products.map((product) => (
