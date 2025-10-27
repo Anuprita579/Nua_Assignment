@@ -1,16 +1,57 @@
-# React + Vite
+# NUA Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
 
-Currently, two official plugins are available:
+- [Overview](#overview)
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
+This project is an e-commerce web application where users can browse different products, view their details, and add them to a shopping cart. The main focus of the project is to provide a smooth and consistent shopping experience with persistent cart data, minimal reloads, and improved performance through caching and debouncing.
 
-## React Compiler
+## Features
+- **Debouncing**: The search bar waits for a short pause before making a request, preventing unnecessary API calls.
+- **Cached Result**: Product details and listings are cached locally so users don’t lose progress or experience delays when revisiting pages.
+- **Cart Management**: Users can add products, adjust quantities, or remove items. The cart state is stored in localStorage, so it remains even after reloading the page.
+- **Persistent Update**: The product quantity updates are reflected and preserved across page reloads.
+- **Responsive Design**: The interface adjusts smoothly across different screen sizes.
+- **Optimized State Management**: All products and cart operations are managed through a global Redux store for predictable state updates.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Demo
+https://nua-assignment-two.vercel.app/
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+   ```
+   git clone https://github.com/Anuprita579/Nua_Assignment.git
+   ```
+2. Navigate to project directory
+   ```
+   cd Nua_Assignment
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
+4. Start the application:
+   ```
+   npm run dev
+   ```
+Open your browser and visit http://localhost:5173
+
+## Technologies Used
+- React: Frontend
+- Redux Toolkit: State Management 
+- TailwindCSS: Styling
+- Vite: Bundler
+- React Testing Library: Testing
+
+## Usage
+- **Browse Products**: Navigate through the product list and view item details.
+- **Add to Cart**: Click “Add” to include a product in the cart. The button switches to a quantity counter for easy updates.
+- **Cart Management**: Increase or decrease the item count, or remove items completely.
+- **Data Persistence**: The cart and quantities remain saved even after refreshing or closing the tab.
